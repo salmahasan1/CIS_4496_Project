@@ -1,0 +1,20 @@
+EDA
+
+1.	What is the age distribution of the customers? 
+ 
+2.	How many customers did not make transactions?
+1371980 total customers.
+1362281 customers made transactions.
+9,699 customers did not make transactions.
+
+3.	What are the most frequently bought articles?
+ 
+Ladieswear has the most frequently bought articles.
+
+4.	How many unique postal codes are there?
+352,899 postal codes.
+
+5.	How many articles haven’t been bought?
+105,542 total articles.
+104,547 articles have been bought.
+995 articles haven’t been bought.
