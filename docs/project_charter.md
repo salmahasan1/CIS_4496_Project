@@ -119,26 +119,6 @@
   * Research will be conducted during this phase on ways to improve the clustering and association rules models that are already implemented. If there is time left in this phase after improvements are implemented then other approaches can be considered.
   * An interactive dashboard will be created in this phase to provide visuals of insights gained from the data. 
 
-
-* Phase 1: Data preprocessing/cleaning and data exploration
-  * 1.5 weeks: February 6 - February 15
-  * Data preprocessing and exploration will be conducted on the customer attributes, product attributes, and purchase history. The only data that will be excluded from this phase are the descriptions and images of the individual items. The data for item descriptions and images will be processed in a later phase.
-* Phase 2: Create a baseline collaborative filtering program and a baseline content-based filtering program 
-  * 2.5 weeks: February 16 - March 3
-  * **February 22: Phase 1 Project Demo**
-  * In this phase, we will implement basic collaborative and content-based filtering programs. The collaborative filtering method will use customer metadata to identify like-minded users so that items can be recommended to users with similar tastes. The content-based filtering method will use product metadata to recommend items. The mean average precision will be calculated in this phase to get an idea of how much we need to improve our model based on the current leadership board on Kaggle.
-* Phase 3: Feature extraction for product descriptions and product images
-  * 2.5 weeks: March 13 - March 29
-  * **March 29: Phase 2 Project Demo**
-  * Feature extraction will be performed on the product descriptions and the product images so that useful information can be obtained from the raw data. 
-* Phase 4: Incorporate product description features and product image features into models
-  * 3 weeks: March 30 - April 19
-  * The features that were extracted in phase 2 will be incorporated into the collaborative filtering program and the content-based filtering program. These features should improve the performance of the model and other steps can be taken to improve the performance of the models during this phase. 
-* Phase 5: Data Visualization
-  * 1.5 weeks: April 20 - April 30
-  * An interactive dashboard will be created in this phase to provide visuals of insights gained from the data. 
-  * **May 1: Phase 3 Project + Interactive Dashboard Demo**
-
 ## Personnel
 **Who will be working on this project and in what capacities?**
 
