@@ -11,12 +11,13 @@
 **What data science solutions are we trying to build? What will we deliver, and how will it be used by the client/user?**
 
 * We will be implementing multiple modes of machine learning to create a recommender system for H&M shoppers
-  * Standard recommender system techniques
-    * Content-based filtering using the article metadata
-    * Collaborative filtering using the customer metadata
+  * Association rules
+    * Recommendation based off of what has been bought together before
   * Natural language processing techniques using the provided descriptions of the articles 
+    * Clustering and find cosine similarity between TFIDF vectors
   * Image processing techniques using the provided images of the articles
-* Using the metrics described below, our recommender system will output 12 recommendations per customer to be evaluated
+  * Using the metrics described below, our recommender system will output 12 recommendations per customer to be evaluated
+
 
 
 ## Metrics
@@ -35,20 +36,64 @@
 
 * Data
   * Article metadata
-    * All columns of nominal data
+    * 105542 articles in the dataset
+    * 23 columns of data:
+      * Article_id
+      * Product_code
+      * Prod_name
+      * Product_type_no
+      * Product_type_name
+      * Product_group_name
+      * Graphical_appearance_no
+      * Graphical_appearance_name
+      * Colour_group_code
+      * Colour_group_name
+      * Perceived_colour_value_id
+      * Perceived_colour_value_name
+      * Perceived_colour_master_id
+      * Perceived_colour_master_name
+      * Department_no
+      * Department_name
+      * Index_code
+      * Index_group_name
+      * Section_no
+      * Section_name
+      * Garment_group_name
+      * Garment_group_no
+      * Detail_desc
+    * Many of the attributes have overlap. For example, graphical_appearance_no provides the same information as graphical_appearance name. The only difference is that graphical_appearance_no is in numerical form.
   * Customer metadata
-    * Mostly columns of nominal data
+    * 1371980 customers in the dataset
+    * 5 columns of nominal data:
+      * FN
+      * Active
+      * Club_member_status
+      * Fashion_news_frequency
+      * Postal_code
     * One column of quantitative data (age)
-  * Transaction history
+ * Transaction history
+    * 31788324 transactions in the dataset
+    * Attributes included for each transaction:
+      * T_dat
+      * Customer_id
+      * Article_id
+      * Price
+      * Sales_channel_id
     * One row = one transaction
     * One customer has many rows
     * Unit of price isn’t of any specific current/unit
   * Article image data
-    * Not all articles have images
+    * 105100 unique images provided
+    * 442 articles do not have images
+    * Images are organized into folders based on the first three digits of the article_id 
+    * Images are in color
+    * Image files vary in size from 70 kB to 900 kB with most of the images being between 100 kB and 400 kB.
+
 * Tools
   * Compute GPU (High-Performance Computing)
-  * VS Code
-    * Python
+    * Python 3.8
+    * PyTorch singularity container
+  * Kaggle notebook
 * Dashboard/Presentation
   * Website
 
