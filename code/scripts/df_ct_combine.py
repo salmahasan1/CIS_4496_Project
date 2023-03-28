@@ -28,7 +28,7 @@ def combine():
     
     for c, alist in zip(df_ct_final['customer_id'], df_ct_final['articles']):    
         if ('...' in alist):
-            print(c)
+#             print(c)
             df_ct_final = df_ct_final.drop(df_ct_final[df_ct_final['customer_id'] == c].index).reset_index(drop=True)
             df_ct_final.loc[len(df_ct_final)] = [c, list(df_t[df_t['customer_id'] == c]['article_id'])]
 
