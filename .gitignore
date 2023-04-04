@@ -163,3 +163,5 @@ cython_debug/
 /data/archive
 /code/archive
 /data/transactions_subset.csv
+/data/clean_ar.csv
+/data/submission/ar_submission.csv
